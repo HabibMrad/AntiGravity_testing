@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Todo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <p class="subtitle">Stay organized, stay focused.</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off">
+            <button id="add-btn">
+                <i class="ri-add-line"></i>
+            </button>
+        </div>
+
+        <ul id="todo-list" class="todo-list">
+            <!-- Todo items will be injected here -->
+        </ul>
+        
+        <div id="empty-state" class="empty-state hidden">
+            <i class="ri-checkbox-circle-line"></i>
+            <p>All tasks completed! Great job.</p>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
